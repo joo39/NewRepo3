@@ -1,0 +1,30 @@
+﻿<Page x:Class="WpfApp1.updData"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      
+      Title="updData">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="40,223,0,0" TextWrapping="Wrap" Text="Название самолета" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBox Name="Name_btn" HorizontalAlignment="Left" Margin="200,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="35" />
+        <TextBlock  HorizontalAlignment="Left" Margin="55,62,0,0" TextWrapping="Wrap" Text="Дата производства" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBox Name ="Data_btn" HorizontalAlignment="Left" Margin="200,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,102,0,0" TextWrapping="Wrap" Text="Вместимость" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBox Name ="Capacity_btn" HorizontalAlignment="Left" Margin="200,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,142,0,0" TextWrapping="Wrap" Text="То" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBox Name ="TO_btn" HorizontalAlignment="Left" Margin="200,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,182,0,0" TextWrapping="Wrap" Text="Часы полета" VerticalAlignment="Top" Width="140" Height="35"/>
+        <TextBox Name="hours_btn" HorizontalAlignment="Left" Margin="200,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="35"/>
+        <Button Name ="updButtton" Content="обновить" HorizontalAlignment="Left" Margin="170,339,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="updButton_click"/>
+        <TextBox Name="id_btn" HorizontalAlignment="Left" Margin="200,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="33"/>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" Margin="10,10,-10,-10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="85,33,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="8.239,-0.299"/>
+
+
+    </Grid>
+</Page>

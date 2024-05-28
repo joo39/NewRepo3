@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="удаленная СУБД" Height="450" Width="800">
+    <Grid>
+        <Button  Name  ="Upd_btn" Content="Update data" HorizontalAlignment="Left" Margin="521,23,0,0" VerticalAlignment="Top" Click="Upd_btn_Click"/>
+        <Button Name= "con_btn"  Content="Connect" HorizontalAlignment="Left" Margin="179,23,0,0" VerticalAlignment="Top" Click="con_btn_Click"/>
+        <Button Name = "add_Btn"  Content="Add data" HorizontalAlignment="Left" Margin="288,23,0,0" VerticalAlignment="Top" Click="add_Btn_Click"/>
+        <Button Name="ButtonDell" Content="Delete data" HorizontalAlignment="Left" Margin="411,23,0,0" VerticalAlignment="Top" Click="ButtonDell_Click"/>
+        <DataGrid AutoGenerateColumns ="False" Name ="DaGri"  Margin="19,76,223,49">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header =" airoplane id" Binding ="{Binding airplane_id}" ></DataGridTextColumn>
+                <DataGridTextColumn Header =" airoplane name" Binding ="{Binding airplane_name}" ></DataGridTextColumn>
+                <DataGridTextColumn Header =" date of issue" Binding ="{Binding date_of_issue }" ></DataGridTextColumn>
+                <DataGridTextColumn Header =" capacity" Binding ="{Binding capacity}" ></DataGridTextColumn>
+                <DataGridTextColumn Header ="last tech service " Binding ="{Binding last_tech_service}" ></DataGridTextColumn>
+                <DataGridTextColumn Header ="Flight hour " Binding ="{Binding flight_hour}" ></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+
+        </Grid>
+</Window>
